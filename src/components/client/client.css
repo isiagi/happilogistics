@@ -1,0 +1,23 @@
+.client__container {
+    min-height: 60vh;
+    background: url('../../assets/images/5.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.client__wrapper1 {
+    width: 1024px;
+    max-width: 100%;
+}
+
+.slider {
+    width: 1024px;
+    max-width: 100%;
+    font-size: 1.2em;
+}
