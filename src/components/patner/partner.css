@@ -1,0 +1,17 @@
+.partner__mar {
+  margin: 0 90px;
+  font-size: 1.8rem;
+}
+
+.partner__container {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner__wrapper {
+    width: 1024px;
+    max-width: 100%;
+}

@@ -3,6 +3,7 @@ import Header1 from '../../components/header1/Header1'
 import Navbar from '../../components/navbar/Navbar'
 import Services from '../../components/service/Services'
 import Client from '../../components/client/Client'
+import Partner from '../../components/patner/Partner'
 import './Home.css'
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
         <Header1 />
         <Services />
         <Client />
+        <Partner />
         <Footer />
     </div>
   )
