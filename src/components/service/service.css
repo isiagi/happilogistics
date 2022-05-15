@@ -1,0 +1,15 @@
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 10px;
+    line-height: 1.5rem;
+}
+
+.services-col-grid {
+    border: 2px solid rgb(227, 11, 11);
+}
+
+.services-col-grid:hover {
+    background-color: rgb(227, 11, 11);
+    color: #fff;
+}
