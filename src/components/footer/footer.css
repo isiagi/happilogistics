@@ -1,5 +1,22 @@
-.footerWrapper {
-    background-color:rgba(23,27,38,1);
-    min-height: 40vh;
+.footer__container {
+    /* background-color:rgba(23,27,38,1); */
+    background: url('../../assets/images/footer_bg.png');
+    background-position: center;
+    /* background-size: cover; */
+    min-height: 60vh;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__wrapper {
+    width: 1024px;
+    max-width: 100%;
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
 }
