@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 
+
 const Navbar = () => {
+
   const [offSet, setOffset] = React.useState(0);
 
   React.useEffect(() => {
@@ -10,10 +13,12 @@ const Navbar = () => {
     };
   }, []);
 
+  let loc = window.location.pathname.includes('/detail/')
+
   return (
     <div className="navbar">
-      <div className={offSet > 40 ? "navbarContainer1" : "navbarContainer"}>
-        <h1 style={{marginLeft: '2rem', fontSize: '3rem'}}>Maritime</h1>
+      <div className={offSet  > 40 || loc ? "navbarContainer1" : "navbarContainer"}>
+        <h1 style={{ marginLeft: "2rem", fontSize: "3rem" }}>Maritime</h1>
         <div className="navbarLinks">
           <ul>
             <li>Home</li>
@@ -23,11 +28,23 @@ const Navbar = () => {
                 <div className="dropdown__menu">
                   <div>
                     <div class="dropdown-links">
-                      <p>Clearing and Forwarding</p>
-                      <p>Warehousing and Distribution</p>
-                      <p>Land Transport</p>
-                      <p>Ocean Freight</p>
-                      <p>Land Freight</p>
+                      <p>
+                        <Link to="/detail/clear">Clearing and Forwarding</Link>
+                      </p>
+                      <p>
+                        <Link to="/detail/ware">
+                          Warehousing / Distribution
+                        </Link>
+                      </p>
+                      <p>
+                        <Link to="/detail/land">Land Transport</Link>
+                      </p>
+                      <p>
+                        <Link to="/detail/water">Ocean Freight</Link>
+                      </p>
+                      <p>
+                        <Link to="/detail/air">Air Freight</Link>
+                      </p>
                     </div>
                   </div>
                 </div>

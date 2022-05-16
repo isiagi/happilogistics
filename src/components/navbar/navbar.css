@@ -23,7 +23,7 @@
     width: 100%;
     max-width: 1024px;
     justify-content: space-between;
-    background-color: rgb(58, 58, 191);
+    background-color: #0693e3;
     align-items: center;
     border-radius: 10px;
 }
@@ -69,6 +69,10 @@
     opacity: 1;
     pointer-events: auto;
 }
+
+.dropdown-links p > a:focus {
+    pointer-events: auto;
+  }
 
 .dropdown-links > p:hover {
     background-color: red;

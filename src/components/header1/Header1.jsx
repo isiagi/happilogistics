@@ -5,6 +5,7 @@ const Header1 = () => {
   return (
     <div className="headerContainer">
       <div className="header__wrapper center">
+      <div className="header__div"/>
         <h1>MARITIME SHIPPING COMPANY</h1>
         <TypeAnimation
           className="animation"
