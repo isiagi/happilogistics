@@ -21,7 +21,7 @@ const Navbar = () => {
         <h1 style={{ marginLeft: "2rem", fontSize: "3rem" }}>Maritime</h1>
         <div className="navbarLinks">
           <ul>
-            <li>Home</li>
+            <li><Link to='/'>Home</Link></li>
             <li>
               <div className="nav__drop">
                 <button className="nav__btn">Services</button>
@@ -50,8 +50,8 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><Link to='/'>About</Link></li>
+            <li><Link to='/detail/contact'>Contact</Link></li>
           </ul>
         </div>
       </div>

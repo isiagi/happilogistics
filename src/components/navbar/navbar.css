@@ -63,6 +63,7 @@
     outline: none;
     background: transparent;
     color: #fff;
+    cursor: pointer;
 }
 
 .nav__drop > .nav__btn:focus + .dropdown__menu {
@@ -75,6 +76,6 @@
   }
 
 .dropdown-links > p:hover {
-    background-color: red;
+    text-decoration: underline;
     width: 100%;
 }
