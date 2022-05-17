@@ -1,0 +1,53 @@
+.why__container {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  align-items: center;
+}
+
+.why__wrapper {
+  width: 1024px;
+  max-width: 100%;
+}
+
+.why__flex {
+  display: flex;
+  gap: 10px;
+}
+
+.why__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 4rem;
+}
+
+.why__content {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.why__content > h2 {
+  color: #0693e3;
+}
+
+.why__content > p {
+  color: #abb8c3;
+}
+
+.why__flex > .icon {
+  font-size: 3rem;
+  color: #0693e3;
+}
+
+.why__flex > div > h3 {
+  color: rgb(210, 53, 53);
+}
+
+.why__flex > div > p {
+  color: #abb8c3;
+}
+
+.look {
+    color: rgb(210, 53, 53);
+}

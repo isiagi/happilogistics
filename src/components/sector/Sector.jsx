@@ -15,34 +15,34 @@ const Sector = () => {
       <div className="sector__wrapper sector__flex">
         <div className="sector__content1">
           <h2>INDUSTRY SECTORS COVERAGE</h2>
-          <p style={{color:'#abb8c3'}}>
+          <p style={{ color: "#abb8c3", width: '550px' }}>
             A specialized service in handing and management of import cargo such
             as;
           </p>
-          <p style={{ fontSize: "1.2rem",fontWeight: "light", color: 'rgb(210, 53, 53)'}}>
-            <GiCargoCrate style={{ fontSize: "2.5rem", color: '#0693e3' }}/> General cargo
+          <p className="sector">
+            <GiCargoCrate className="sector__icons" /> General cargo
           </p>
-          <p style={{ fontSize: "1.2rem",fontWeight: "light", color: 'rgb(210, 53, 53)' }}>
-            <AiOutlineProject style={{ fontSize: "2.5rem", color: '#0693e3'  }}/> 
+          <p className="sector">
+            <AiOutlineProject className="sector__icons" />
             Project cargo
           </p>
-          <p style={{ fontSize: "1.2rem",fontWeight: "light", color: 'rgb(210, 53, 53)' }}>
-            <AiOutlineCar style={{ fontSize: "2.5rem", color: '#0693e3'  }}/> Vehicles
+          <p className="sector">
+            <AiOutlineCar className="sector__icons" /> Vehicles
           </p>
-          <p style={{ fontSize: "1.2rem",fontWeight: "light", color: 'rgb(210, 53, 53)' }}>
-            <GiMetalPlate style={{ fontSize: "2.5rem", color: '#0693e3'  }}/>
+          <p className="sector">
+            <GiMetalPlate className="sector__icons" />
             Plastics, steel & machinery
           </p>
-          <p style={{ fontSize: "1.2rem",fontWeight: "light", color: 'rgb(210, 53, 53)' }}>
-            <GiMinerals style={{ fontSize: "2.5rem", color: '#0693e3'  }}/>
+          <p className="sector">
+            <GiMinerals className="sector__icons" />
             Oil, extractives & minerals
           </p>
-          <p style={{ fontSize: "1.2rem",fontWeight: "light", color: 'rgb(210, 53, 53)' }}>
-            <BsBoxSeam style={{ fontSize: "2.5rem", color: '#0693e3'  }}/>
+          <p className="sector">
+            <BsBoxSeam className="sector__icons" />
             Specialized equipment
           </p>
-          <p style={{ fontSize: "1.2rem",fontWeight: "light", color: 'rgb(210, 53, 53)' }}>
-            <SiXdadevelopers style={{ fontSize: "2.5rem", color: '#0693e3'  }}/>
+          <p className="sector">
+            <SiXdadevelopers className="sector__icons" />
             Consumables (electronics, clothing, etc.)
           </p>
         </div>

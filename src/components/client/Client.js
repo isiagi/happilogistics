@@ -19,7 +19,7 @@ const Client = () => {
       <div className="client__wrapper1">
         <div className="client__wrapper">
           <p
-            style={{ marginBlock: "2rem", fontWeight: "bold", fontSize: "1em" }}
+            style={{ marginBlock: "2rem", fontWeight: "400", fontSize: "1em" }}
           >
             TESTIMONIALS
           </p>
@@ -42,9 +42,9 @@ const Client = () => {
               good customer care based on very good mutual under- standing. In
               short I would say maritime is a good clearing com- pany.
             </p>
-            <h2>NSUBUGA JAMES, </h2>
-            <h3>Commercial coordinator</h3>
-            <h4>Star Times Uganda </h4>
+            <h2 className="sir">NSUBUGA JAMES, </h2>
+            <h3 className="sir">Commercial coordinator</h3>
+            <h4 className="sir">Star Times Uganda </h4>
           </div>
         </Slider>
       </div>

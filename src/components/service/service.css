@@ -1,15 +1,45 @@
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 10px;
-    line-height: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 10px;
+  line-height: 1.5rem;
 }
 
 .services-col-grid {
-    border: 2px solid rgb(227, 11, 11);
+  border: 2px solid rgb(210, 53, 53);
 }
 
-.services-col-grid:hover {
-    background-color: rgb(227, 11, 11);
-    color: #fff;
+.service__content {
+  max-width: 300px;
+  margin-left: 30px;
 }
+
+.service__content > h3 {
+    margin-block: 2rem;
+    font-size: 3rem;
+    color: rgb(210, 53, 53);
+}
+
+.service__content > h2 {
+    margin-block: 1rem;
+    color: #0693e3;
+}
+
+.service__content1 {
+    height: 90px
+}
+
+.service__content1 > p {
+    color: rgb(49, 49, 160);
+}
+
+.part {
+    margin-block: 2rem;
+    font-weight: bold;
+    color: rgb(210, 53, 53);
+}
+
+.hello:hover * {
+    background-color: rgb(210, 53, 53);
+    color: #fff;
+  }

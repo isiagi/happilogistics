@@ -1,6 +1,6 @@
 .client__container {
     min-height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../../assets/images/5.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)),url('../../assets/images/5.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,5 +19,10 @@
 .slider {
     width: 1024px;
     max-width: 100%;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.sir {
+    font-weight: lighter;
 }

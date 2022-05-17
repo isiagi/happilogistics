@@ -9,154 +9,107 @@ import { MdOutlineDangerous } from "react-icons/md";
 import { MdOutlineDeliveryDining } from "react-icons/md";
 import { GiCargoCrate } from "react-icons/gi";
 
+const data = [
+  {
+    id: 1,
+    icon: <GiCargoCrate />,
+    head: "General Cargo",
+    para: `We handle all IMPORT & EXPORT goods from all destinations in
+    Europe, USA, UK, China ,Japan, UAE Dubai, SADC, EAC countries`,
+  },
+  {
+    id: 2,
+    icon: <RiShipLine />,
+    head: "SEA FREIGT",
+    para: `We handle sea freight (general cargo, specialized cargo and
+      heavy equipment. Clients gets maximum value for their money.`,
+  },
+  {
+    id: 3,
+    icon: <IoAirplaneOutline />,
+    head: "AIR FREIGT",
+    para: `We provide airline dealings, storage, VAT and import duty,
+    postponement`,
+  },
+  {
+    id: 4,
+    icon: <CgBox />,
+    head: "WARE HOUSING",
+    para: `We offer warehousing service & prepare documentation ,
+    verification and exiting goods to your premises`,
+  },
+  {
+    id: 5,
+    icon: <MdOutlineDeliveryDining />,
+    head: "DISTRIBUTION & DELIVERY",
+    para: `We offer Distribution & delivery services (door to door). we
+    integrate ship ,air, rail and road transport for you to get the
+    best`,
+  },
+  {
+    id: 6,
+    icon: <AiOutlineContainer />,
+    head: "CONTAINER LOAD & SHIPPING LINE",
+    para: `We handle various group page cargo, part & full container loads,
+    all documentation. We offer incentives`,
+  },
+  {
+    id: 7,
+    icon: <MdOutlineVerifiedUser />,
+    head: "INSURANCE",
+    para: `We have clients get customs & freight insurance , financial
+    guarantee & insurance bonds`,
+  },
+  {
+    id: 8,
+    icon: <GiRoad />,
+    head: "INLAND TRANSPORT",
+    para: ` We offer domestic & inter modal trucking e.g. motor ,ocean and
+    air carriers`,
+  },
+  {
+    id: 9,
+    icon: <MdOutlineDangerous />,
+    head: "OIL, DANGEROUS CARGO & RELIEF LOGISTICS",
+    para: ` We handle oil, other dangerous cargo, aids and relief cargo
+    logistics`,
+  },
+];
+
 const Services = () => {
   return (
     <div
       style={{
         maxWidth: "1020px",
         width: "100%",
-        margin: "0 auto",
+        margin: "5rem auto",
       }}
     >
+      <h2
+        style={{
+          textAlign: "center",
+          color: "rgb(210, 53, 53)",
+          marginBottom: "2rem",
+          fontSize: "2rem",
+        }}
+      >
+        Our Services
+      </h2>
       <div className="services-grid">
-        <div className="services-col-grid">
-          <div style={{ maxWidth: "300px", marginLeft: "30px" }}>
-            <h3 style={{ marginBlock: "2rem", fontSize: "3rem" }}>
-              <GiCargoCrate />
-            </h3>
-            <h2 style={{ marginBlock: "1rem" }}>General cargo</h2>
-            <div style={{ height: "90px" }}>
-              <p>
-                We handle all IMPORT & EXPORT goods from all destinations in
-                Europe, USA, UK, China ,Japan, UAE Dubai, SADC, EAC countries
-              </p>
+        {data.map(({ id, icon, head, para }) => (
+          <div className="hello" key={id}>
+            <div className="services-col-grid">
+              <div className="service__content">
+                <h3>{icon}</h3>
+                <h2>{head}</h2>
+                <div className="service__content1">
+                  <p>{para}</p>
+                </div>
+                <p className="part">Read More</p>
+              </div>
             </div>
-            <p style={{ marginBlock: "2rem" }}>Read More</p>
           </div>
-        </div>
-        <div className="services-col-grid">
-          <div style={{ maxWidth: "300px", marginLeft: "30px" }}>
-            <h3 style={{ marginBlock: "2rem", fontSize: "3rem" }}>
-              <RiShipLine />
-            </h3>
-            <h2 style={{ marginBlock: "1rem" }}>SEA FREIGT</h2>
-            <div style={{ height: "90px" }}>
-              <p>
-                We handle sea freight (general cargo, specialized cargo and
-                heavy equipment. Clients gets maximum value for their money.
-              </p>
-            </div>
-            <p style={{ marginBlock: "2rem" }}>Read More</p>
-          </div>
-        </div>
-        <div className="services-col-grid">
-          <div style={{ maxWidth: "300px", marginLeft: "30px" }}>
-            <h3 style={{ marginBlock: "2rem", fontSize: "3rem" }}>
-              <IoAirplaneOutline />
-            </h3>
-            <h2 style={{ marginBlock: "1rem" }}>AIR FREIGT</h2>
-            <div style={{ height: "90px" }}>
-              <p>
-                We provide airline dealings, storage, VAT and import duty,
-                postponement
-              </p>
-            </div>
-            <p style={{ marginBlock: "2rem", cursor: "pointer" }}>Read More</p>
-          </div>
-        </div>
-        <div className="services-col-grid">
-          <div style={{ maxWidth: "300px", marginLeft: "30px" }}>
-            <h3 style={{ marginBlock: "2rem", fontSize: "3rem" }}>
-              <CgBox />
-            </h3>
-            <h2>WARE HOUSING</h2>
-            <div style={{ height: "90px" }}>
-              <p>
-                We offer warehousing service & prepare documentation ,
-                verification and exiting goods to your premises
-              </p>
-            </div>
-            <p style={{ marginBlock: "2rem", cursor: "pointer" }}>Read More</p>
-          </div>
-        </div>
-        <div className="services-col-grid">
-          <div style={{ maxWidth: "300px", marginLeft: "30px" }}>
-            <h3 style={{ marginBlock: "2rem", fontSize: "3rem" }}>
-              <MdOutlineDeliveryDining />
-            </h3>
-            <h2>DISTRIBUTION & DELIVERY</h2>
-            <div style={{ height: "90px" }}>
-              <p>
-                We offer Distribution & delivery services (door to door). we
-                integrate ship ,air, rail and road transport for you to get the
-                best
-              </p>
-            </div>
-            <p style={{ marginBlock: "2rem", cursor: "pointer" }}>Read More</p>
-          </div>
-        </div>
-        <div className="services-col-grid">
-          <div style={{ maxWidth: "300px", marginLeft: "30px" }}>
-            <h3 style={{ marginBlock: "2rem", fontSize: "3rem" }}>
-              <AiOutlineContainer />
-            </h3>
-            <h2>CONTAINER LOAD & SHIPPING LINE</h2>
-            <div style={{ height: "90px" }}>
-              <p>
-                We handle various group page cargo, part & full container loads,
-                all documentation. We offer incentives
-              </p>
-            </div>
-            <p style={{ marginBlock: "2rem", cursor: "pointer" }}>Read More</p>
-          </div>
-        </div>
-        <div className="services-col-grid">
-          <div style={{ maxWidth: "300px", marginLeft: "30px" }}>
-            <h3 style={{ marginBlock: "2rem", fontSize: "3rem" }}>
-              <MdOutlineVerifiedUser />
-            </h3>
-            <h2>INSURANCE</h2>
-            <div style={{ height: "90px" }}>
-              <p>
-                We have clients get customs & freight insurance , financial
-                guarantee & insurance bonds
-              </p>
-            </div>
-            <p style={{ marginBlock: "2rem", cursor: "pointer" }}>Read More</p>
-          </div>
-        </div>
-        <div className="services-col-grid">
-          <div style={{ maxWidth: "300px", marginLeft: "30px" }}>
-            <h3>
-              <GiRoad style={{ marginBlock: "2rem", fontSize: "3rem" }} />
-            </h3>
-            <h2>INLAND TRANSPORT</h2>
-            <div style={{ height: "90px" }}>
-              <p>
-                We offer domestic & inter modal trucking e.g. motor ,ocean and
-                air carriers
-              </p>
-            </div>
-            <p style={{ marginBlock: "2rem", cursor: "pointer" }}>Read More</p>
-          </div>
-        </div>
-        <div className="services-col-grid">
-          <div style={{ maxWidth: "300px", marginLeft: "30px" }}>
-            <h3>
-              <MdOutlineDangerous
-                style={{ marginBlock: "2rem", fontSize: "3rem" }}
-              />
-            </h3>
-            <h2>OIL, DANGEROUS CARGO & RELIEF LOGISTICS</h2>
-            <div style={{ height: "90px" }}>
-              <p>
-                We handle oil, other dangerous cargo, aids and relief cargo
-                logistics
-              </p>
-            </div>
-            <p style={{ marginBlock: "2rem", cursor: "pointer" }}>Read More</p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

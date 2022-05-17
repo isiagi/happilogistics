@@ -4,7 +4,7 @@ import './partner.css'
 const Partner = () => {
   return (
     <div className="partner__container">
-    <h2 style={{marginBottom: '2em'}}>OUR CLIENTELE </h2>
+    <h2 style={{marginBottom: '2em',color: '#0693e3'}}>OUR CLIENTELE </h2>
         <div className="partner__wrapper">
         <Marquee >
             <h4 className="partner__mar">STAR DIGITAL TEVELVISION </h4>

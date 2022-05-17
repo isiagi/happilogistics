@@ -1,32 +1,51 @@
 .sector__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
 }
 
 .sector__wrapper {
-    width: 1024px;
-    max-width: 100%;
-    overflow: hidden;
+  width: 1024px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .sector__flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .sector__img > img {
-    width: 400px;
-    max-width: 100%;
-    height: 500px;
-    max-height:auto;
+  width: 400px;
+  max-width: 100%;
+  height: 500px;
+  max-height: auto;
 }
 
 .sector__content1 {
-    height: fit-content;
-    line-height: 2.78rem;
-    min-height: 60vh;
+  height: fit-content;
+  line-height: 2.78rem;
+  min-height: 60vh;
+}
+
+.sector__content1 > h2 {
+  color: rgb(210, 53, 53);
+}
+
+.sector__content1  .grt {
+  color: "#abb8c3";
+}
+
+.sector {
+  font-size: 1.2rem;
+  font-weight: light;
+  color: #abb8c3;
+}
+
+.sector__icons {
+  font-size: 2.5rem;
+  color: #0693e3;
 }
