@@ -39,6 +39,20 @@ const data = [
     verification and exiting goods to your premises`,
   },
   {
+    id: 7,
+    icon: <MdOutlineVerifiedUser />,
+    head: "INSURANCE",
+    para: `We have clients get customs & freight insurance , financial
+    guarantee & insurance bonds`,
+  },
+  {
+    id: 8,
+    icon: <GiRoad />,
+    head: "INLAND TRANSPORT",
+    para: ` We offer domestic & inter modal trucking e.g. motor ,ocean and
+    air carriers`,
+  },
+  {
     id: 5,
     icon: <MdOutlineDeliveryDining />,
     head: "DISTRIBUTION & DELIVERY",
@@ -54,23 +68,9 @@ const data = [
     all documentation. We offer incentives`,
   },
   {
-    id: 7,
-    icon: <MdOutlineVerifiedUser />,
-    head: "INSURANCE",
-    para: `We have clients get customs & freight insurance , financial
-    guarantee & insurance bonds`,
-  },
-  {
-    id: 8,
-    icon: <GiRoad />,
-    head: "INLAND TRANSPORT",
-    para: ` We offer domestic & inter modal trucking e.g. motor ,ocean and
-    air carriers`,
-  },
-  {
     id: 9,
     icon: <MdOutlineDangerous />,
-    head: "OIL, DANGEROUS CARGO & RELIEF LOGISTICS",
+    head: "OIL,DANGEROUS CARGO & RELIEF LOGISTICS",
     para: ` We handle oil, other dangerous cargo, aids and relief cargo
     logistics`,
   },

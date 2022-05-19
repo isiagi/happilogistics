@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MdTableRows } from "react-icons/md";
+import { GiCancel } from "react-icons/gi";
 import "./navbar.css";
 
-
 const Navbar = () => {
-
   const [offSet, setOffset] = React.useState(0);
+  const [open, setOpen] = React.useState(false);
 
   React.useEffect(() => {
     window.onscroll = () => {
@@ -13,15 +14,19 @@ const Navbar = () => {
     };
   }, []);
 
-  let loc = window.location.pathname.includes('/detail/')
+  let loc = window.location.pathname.includes("/detail/");
 
   return (
     <div className="navbar">
-      <div className={offSet  > 40 || loc ? "navbarContainer1" : "navbarContainer"}>
+      <div
+        className={offSet > 40 || loc ? "navbarContainer1" : "navbarContainer"}
+      >
         <h1 style={{ marginLeft: "2rem", fontSize: "3rem" }}>Maritime</h1>
-        <div className="navbarLinks">
+        <div className={`${'navbarLinks'} ${open ? 'active' : '' }`}>
           <ul>
-            <li><Link to='/'>Home</Link></li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
             <li>
               <div className="nav__drop">
                 <button className="nav__btn">Services</button>
@@ -50,10 +55,23 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li><Link to='/'>About</Link></li>
-            <li><Link to='/detail/contact'>Contact</Link></li>
+            <li>
+              <Link to="/">About</Link>
+            </li>
+            <li>
+              <Link to="/detail/contact">Contact</Link>
+            </li>
           </ul>
         </div>
+        {open ? (
+          <div className="iconContainer" onClick={() => setOpen(false)}>
+          <GiCancel className='toggleIcon'  />
+          </div>
+        ) : (
+          <div className="iconContainer" onClick={() => setOpen(true)}>
+          <MdTableRows className='toggleIcon'  />
+          </div>
+        )}
       </div>
     </div>
   );
