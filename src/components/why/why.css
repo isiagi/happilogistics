@@ -24,7 +24,8 @@
 
 .why__content {
   text-align: center;
-  margin-block: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 .why__content > h2 {
