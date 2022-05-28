@@ -1,5 +1,6 @@
 import TypeAnimation from "react-type-animation";
 import "./header1.css";
+import {BsFillArrowDownCircleFill} from 'react-icons/bs'
 
 const Header1 = () => {
   return (
@@ -30,6 +31,7 @@ const Header1 = () => {
           repeat={Infinity}
         />
       </div>
+        <BsFillArrowDownCircleFill className="header__icon"/>
     </div>
   );
 };
