@@ -46,7 +46,7 @@
 
 .dropdown__menu {
   position: absolute;
-  top: calc(100% + 6vh);
+  top: calc(100% + 5.5vh);
   left: 0;
   opacity: 0;
   pointer-events: none;
@@ -75,6 +75,10 @@
 
 .dropdown-links p > a:focus {
   pointer-events: auto;
+}
+
+.dropdown-links p > a:hover {
+  color: rgb(210, 53, 53);
 }
 
 .dropdown-links > p:hover {
