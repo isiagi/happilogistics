@@ -1,39 +1,35 @@
 import React from "react";
 import { GiCargoCrate } from "react-icons/gi";
 import { BsTruck } from "react-icons/bs";
+import { HiOutlineBadgeCheck } from "react-icons/hi";
 import "./detail.css";
 
-
-const Dynamic = ({title, head}) => {
-    React.useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
-
+const Dynamic = ({ title, head, word, word1, services, word2 }) => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <div style={{ maxWidth: "700px" }}>
+    <div style={{ maxWidth: "700px", lineHeight: "2.5rem" }}>
       <div className="detail__img">
         <img src={title} alt="truck" />
       </div>
       <h1>{head}</h1>
-      <p>
-        Mlkshk quinoa ethical vegan polaroid, 8-bit meggings paleo Bushwick Blue
-        Bottle beard cred distillery. Post-ironic Shoreditch typewriter kogi
-        church-key squid, umami semiotics. Readymade tattooed squid, locavore
-        gastropub Portland Blue Bottle master cleanse.
-      </p>
-      <p>
-        Mlkshk quinoa ethical vegan polaroid, 8-bit meggings paleo Bushwick Blue
-        Bottle beard cred distillery. Post-ironic Shoreditch typewriter kogi
-        church-key squid, umami semiotics. Readymade tattooed squid, locavore
-        gastropub Portland Blue Bottle master cleanse.
-      </p>
-      <p>
-        Mlkshk quinoa ethical vegan polaroid, 8-bit meggings paleo Bushwick Blue
-        Bottle beard cred distillery. Post-ironic Shoreditch typewriter kogi
-        church-key squid, umami semiotics. Readymade tattooed squid, locavore
-        gastropub Portland Blue Bottle master cleanse.
-      </p>
+      {word && <p>{word}</p>}
+      {word1 && <p>{word1}</p>}
+      {services && (
+        <div>
+          <h2>What We Offer</h2>
+          <ul>
+            {services.map((data, index) => (
+              <li key={index}>
+                <HiOutlineBadgeCheck /> {data}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {word2 && <p>{word2}</p>}
       <div className="header__icons">
         <div>
           <GiCargoCrate style={{ fontSize: "4rem", color: "#0693e3" }} />
