@@ -2,12 +2,13 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   /* flex-direction: column; */
 }
 
 .detail__wrapper {
   width: 1024px;
-  max-width: 100%;
+  /* max-width: 100%; */
   overflow: hidden;
   justify-self: center;
   padding-top: 3rem;
@@ -64,4 +65,10 @@
 .header__icons {
   display: flex;
   gap: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .detail__wrapper {
+    display: block;
+  }
 }

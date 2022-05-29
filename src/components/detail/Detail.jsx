@@ -7,6 +7,8 @@ import img1 from "../../assets/images/car.jpg";
 import img2 from "../../assets/images/land.jpg";
 import img3 from "../../assets/images/sea.jpg";
 import img4 from "../../assets/images/ware.jpeg";
+import img5 from "../../assets/images/in.jpg";
+import img6 from "../../assets/images/fg.jpg";
 
 const Detail = () => {
   React.useEffect(() => {
@@ -27,6 +29,10 @@ const Detail = () => {
         return "Land Transport";
       case "ware":
         return "Warehousing & Distribution";
+      case "insurance":
+        return "Cargo Insurance";
+      case "container":
+        return "Container Load & Shipping line";
       default:
         return null;
     }
@@ -108,12 +114,29 @@ const Detail = () => {
                     ]}
                   />
                 );
-              case "insurane":
+              case "insurance":
                 return (
-                  <Dynamic title={img1} head="CONTAINER LOAD & SHIPPING LINE" />
+                  <Dynamic
+                    title={img5}
+                    head="Cargo Insurance"
+                    word="Maritime cargo policy protects the insured against losses incurred following loss and/or damage to the goods whilst in transit as imports or exports."
+                    word1="A cargo policy will pay up to the amount in which you are insured for if there is a claim"
+                    services={[
+                      "Land Cargo Insurance",
+                      "Marine Cargo Insurance",
+                      "All Risk",
+                    ]}
+                    word2="Cargo Insurance protects your investment, and covers your goods for loss, damage or delay. Without cargo insurance, all cargo is handled, stored and carried at the shipper's, owner's and consignee's risk"
+                  />
                 );
-              case "work":
-                return <Dynamic title={img1} head="Work Abroad" />;
+              case "container":
+                return (
+                  <Dynamic
+                    title={img6}
+                    head="Container Load & Shipping line"
+                    word="We focus on solving your supply chain needs from ends to ends, taking the complexity out of container shipping for you"
+                  />
+                );
               default:
                 return <Dynamic title={img1} head="Air Frieght" />;
             }
@@ -133,7 +156,7 @@ const Detail = () => {
                   <Link to="/detail/water">Water frieght</Link>
                 </li>
                 <li>
-                  <Link to="/detail/distribution">Distribution & Delivery</Link>
+                  <Link to="/detail/ware">Distribution & Delivery</Link>
                 </li>
                 <li>
                   <Link to="/detail/ware">Ware housing</Link>
@@ -142,7 +165,7 @@ const Detail = () => {
                   <Link to="/detail/insurance">Cargo insurance</Link>
                 </li>
                 <li>
-                  <Link to="/detail/shipping">
+                  <Link to="/detail/container">
                     Container Load & Shipping line
                   </Link>
                 </li>

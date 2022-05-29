@@ -27,7 +27,7 @@ const Navbar = () => {
       <div
         className={offSet > 40 || loc ? "navbarContainer1" : "navbarContainer"}
       >
-        <h1 style={{ marginLeft: "2rem", fontSize: "3rem" }}>Maritime</h1>
+        <h1 style={{ marginLeft: "2rem", fontSize: "3rem" }}><Link to='/'>Maritime</Link></h1>
         <div className={`${'navbarLinks'} ${open ? 'active' : '' }`}>
           <ul>
             <li>
@@ -40,7 +40,7 @@ const Navbar = () => {
                   <div>
                     <div class="dropdown-links">
                       <p>
-                        <Link to="/detail/clear">Clearing and Forwarding</Link>
+                        <Link to="/detail/insurance">Insurance</Link>
                       </p>
                       <p>
                         <Link to="/detail/ware">
@@ -55,6 +55,9 @@ const Navbar = () => {
                       </p>
                       <p>
                         <Link to="/detail/air">Air Freight</Link>
+                      </p>
+                      <p>
+                        <Link to="/detail/container">Container Load & Shipping line</Link>
                       </p>
                     </div>
                   </div>

@@ -38,9 +38,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div>
+      {/* <div>
         <h2>Maritime Shipping Company</h2>
-      </div>
+      </div> */}
     </div>
   );
 };

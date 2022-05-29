@@ -12,14 +12,6 @@ import { Link } from "react-router-dom";
 
 const data = [
   {
-    id: 1,
-    icon: <GiCargoCrate />,
-    head: "General Cargo",
-    para: `We handle all IMPORT & EXPORT goods from all destinations in
-    Europe, USA, UK, China ,Japan, UAE Dubai, SADC, EAC countries`,
-    route: "/detail/air",
-  },
-  {
     id: 2,
     icon: <RiShipLine />,
     head: "SEA FREIGT",
@@ -66,7 +58,15 @@ const data = [
     para: `We offer Distribution & delivery services (door to door). we
     integrate ship ,air, rail and road transport for you to get the
     best`,
-    route: "/detail/water",
+    route: "/detail/ware",
+  },
+  {
+    id: 1,
+    icon: <GiCargoCrate />,
+    head: "General Cargo",
+    para: `We handle all IMPORT & EXPORT goods from all destinations in
+    Europe, USA, UK, China ,Japan, UAE Dubai, SADC, EAC countries`,
+    route: "/",
   },
   {
     id: 6,
@@ -82,7 +82,7 @@ const data = [
     head: "OIL,DANGEROUS CARGO & RELIEF LOGISTICS",
     para: ` We handle oil, other dangerous cargo, aids and relief cargo
     logistics`,
-    route: "/detail/water",
+    route: "/",
   },
 ];
 
