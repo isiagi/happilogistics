@@ -10,16 +10,16 @@ const Dynamic = ({ title, head, word, word1, services, word2 }) => {
   }, []);
 
   return (
-    <div style={{ maxWidth: "700px", lineHeight: "2.5rem" }}>
+    <div style={{ maxWidth: "700px", lineHeight: "2.5rem", color: '#433b6d '}}>
       <div className="detail__img">
         <img src={title} alt="truck" />
       </div>
-      <h1>{head}</h1>
+      <h1 style={{color: 'rgb(210, 53, 53)'}}>{head}</h1>
       {word && <p>{word}</p>}
       {word1 && <p>{word1}</p>}
       {services && (
         <div>
-          <h2>What We Offer</h2>
+          <h2 style={{color: 'rgb(210, 53, 53)'}}>What We Offer</h2>
           <ul>
             {services.map((data, index) => (
               <li key={index}>
