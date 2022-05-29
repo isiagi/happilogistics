@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 const Footer = () => {
@@ -25,17 +26,20 @@ const Footer = () => {
         <div>
           <h2>Company Solutions</h2>
           <ul>
-            <li>General cargo</li>
-            <li>SEA FREIGT</li>
-            <li>AIR FREIGT</li>
-            <li>WARE HOUSING</li>
-            <li>DISTRIBUTION &DELIVERY</li>
-            <li>CONTAINER LOAD & SHIPPING LINE</li>
-            <li>INSURANCE</li>
-            <li>INLAND TRANSPORT</li>
-            <li>OIL, DANGEROUS CARGO & RELIEF LOGISTICS</li>
+            <li><Link to='/'>GENERAL CARGO</Link></li>
+            <li><Link to='/detail/water'>SEA FREIGT</Link></li>
+            <li><Link to='/detail/air'>AIR FREIGT</Link></li>
+            <li><Link to='/detail/ware'>WARE HOUSING</Link></li>
+            <li><Link to='/'>DISTRIBUTION &DELIVERY</Link></li>
+            <li><Link to='/'>CONTAINER LOAD & SHIPPING LINE</Link></li>
+            <li><Link to='/'>INSURANCE</Link></li>
+            <li><Link to='/detail/land'>INLAND TRANSPORT</Link></li>
+            <li><Link to='/'>OIL, DANGEROUS CARGO & RELIEF LOGISTICS</Link></li>
           </ul>
         </div>
+      </div>
+      <div>
+        <h2>Maritime Shipping Company</h2>
       </div>
     </div>
   );
