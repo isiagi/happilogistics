@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { MdTableRows } from "react-icons/md";
 import { GiCancel } from "react-icons/gi";
 import "./navbar.css";
@@ -8,7 +8,7 @@ const Navbar = () => {
   const [offSet, setOffset] = React.useState(0);
   const [open, setOpen] = React.useState(false);
 
-  const location = useLocation();
+  // const location = useLocation();
 
   React.useEffect(() => {
     window.onscroll = () => {
