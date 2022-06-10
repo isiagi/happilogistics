@@ -1,13 +1,14 @@
 import React from "react";
+import Banner from "../../components/banner/Banner";
 import Why from "../../components/why/Why";
 import "./about.css";
 
 const About = () => {
-    let loc = window.location.pathname;
+  let loc = window.location.pathname;
 
-    React.useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -67,7 +68,12 @@ const About = () => {
             </div>
           </div>
         </div>
-          <Why />
+        <Why />
+        <div className="about__contain">
+          <div className="about__wrapper">
+            <Banner />
+          </div>
+        </div>
       </div>
     </>
   );

@@ -25,6 +25,13 @@
   color: rgb(49, 49, 160);
 }
 
+.about__contain {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    color: rgb(49, 49, 160);
+  }
+
 .about__wrapper {
   width: 1024px;
   max-width: 100%;

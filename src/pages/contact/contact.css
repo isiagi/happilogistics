@@ -22,77 +22,77 @@ textarea {
 }
 
 textarea {
-    resize: none;
-    outline: none;
+  resize: none;
+  outline: none;
 }
 
 .form__input {
-    padding: .8rem;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid gray;
+  padding: 0.8rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
 }
 
 .form__button {
-    outline: none;
-    width: 100px;
-    padding: .6rem;
-    border-radius: 5px;
-    border: none;
-    background:rgb(210, 53, 53);
-    color: white;
+  outline: none;
+  width: 100px;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+  background: rgb(210, 53, 53);
+  color: white;
 }
 
 .contact__head {
-    min-height: 40vh;
-    background-color: rgb(210, 53, 53);
-    width: 100%;
-    display: flex;
-    color: #fff;
-    align-items: center;
-    justify-content: center;
+  min-height: 40vh;
+  background-color: rgb(210, 53, 53);
+  width: 100%;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact__lead {
-    text-align: center;
-    padding-block: 2rem;   
+  text-align: center;
+  padding-block: 2rem;
 }
 
 .contact__flap {
-    width: 1024px;
-    max-width: 100%;
+  width: 1024px;
+  max-width: 100%;
 }
 
 .contact__flap > h2 {
-    margin-top: 4rem;
-    font-size: 2rem;
+  margin-top: 4rem;
+  font-size: 2rem;
 }
 
 .contact__lead > h2 {
-    color: #0693e3;
-    font-size: 2rem;
+  color: #0693e3;
+  font-size: 2rem;
 }
 
 .contact__lead > p {
-    color: rgb(49, 49, 160);
-    font-size: 1.1rem;
+  color: rgb(49, 49, 160);
+  font-size: 1.1rem;
 }
 
 .contact__info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    color: rgb(49, 49, 160);
-  }
-  
-  .contact__info .icon {
-    font-size: 3rem;
-    width: 100%;
-    color: #0693e3 !important;
-  }
-  
-  .contact__info > div {
-    max-width: 300px;
-    margin:5rem 0;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgb(49, 49, 160);
+}
+
+.contact__info .icon {
+  font-size: 3rem;
+  width: 100%;
+  color: #0693e3 !important;
+}
+
+.contact__info > div {
+  max-width: 300px;
+  margin: 5rem 0;
+}

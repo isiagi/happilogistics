@@ -1,0 +1,18 @@
+.contact__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(49, 49, 160);
+  }
+  
+  .contact__info .icon {
+    font-size: 3rem;
+    width: 100%;
+    color: #0693e3 !important;
+  }
+  
+  .contact__info > div {
+    max-width: 300px;
+    margin:5rem 0;
+  }
