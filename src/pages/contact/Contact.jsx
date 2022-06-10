@@ -3,9 +3,14 @@ import Map from "./Map";
 import { GrMapLocation } from "react-icons/gr";
 import { AiOutlineMail } from "react-icons/ai";
 import { CgPhone } from "react-icons/cg";
+import React from "react";
 
 const Contact = () => {
   let loc = window.location.pathname;
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

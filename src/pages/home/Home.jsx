@@ -5,8 +5,13 @@ import Partner from "../../components/patner/Partner";
 import Sector from "../../components/sector/Sector";
 import "./Home.css";
 import Why from "../../components/why/Why";
+import React from "react";
 
 const Home = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div>
       <Header1 />

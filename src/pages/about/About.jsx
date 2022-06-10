@@ -1,8 +1,13 @@
+import React from "react";
 import Why from "../../components/why/Why";
 import "./about.css";
 
 const About = () => {
     let loc = window.location.pathname;
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
   return (
     <>
