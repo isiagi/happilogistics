@@ -27,37 +27,59 @@ const Navbar = () => {
       <div
         className={offSet > 40 || loc ? "navbarContainer1" : "navbarContainer"}
       >
-        <h1 style={{ marginLeft: "2rem", fontSize: "3rem" }}><Link to='/'>Maritime</Link></h1>
-        <div className={`${'navbarLinks'} ${open ? 'active' : '' }`}>
+        <h1 style={{ marginLeft: "2rem", fontSize: "3rem" }}>
+          <Link to="/" onClick={() => setOpen(false)}>
+            Maritime
+          </Link>
+        </h1>
+        <div className={`${"navbarLinks"} ${open ? "active" : ""}`}>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={() => setOpen(false)}>
+                Home
+              </Link>
             </li>
             <li>
               <div className="nav__drop">
                 <button className="nav__btn">Services</button>
                 <div className="dropdown__menu">
                   <div>
-                    <div class="dropdown-links">
+                    <div className="dropdown-links">
                       <p>
-                        <Link to="/detail/insurance">Insurance</Link>
+                        <Link
+                          to="/detail/insurance"
+                          onClick={() => setOpen(false)}
+                        >
+                          Insurance
+                        </Link>
                       </p>
                       <p>
-                        <Link to="/detail/ware">
+                        <Link to="/detail/ware" onClick={() => setOpen(false)}>
                           Warehousing / Distribution
                         </Link>
                       </p>
                       <p>
-                        <Link to="/detail/land">Land Transport</Link>
+                        <Link to="/detail/land" onClick={() => setOpen(false)}>
+                          Land Transport
+                        </Link>
                       </p>
                       <p>
-                        <Link to="/detail/water">Ocean Freight</Link>
+                        <Link to="/detail/water" onClick={() => setOpen(false)}>
+                          Ocean Freight
+                        </Link>
                       </p>
                       <p>
-                        <Link to="/detail/air">Air Freight</Link>
+                        <Link to="/detail/air" onClick={() => setOpen(false)}>
+                          Air Freight
+                        </Link>
                       </p>
                       <p>
-                        <Link to="/detail/container">Container Load & Shipping line</Link>
+                        <Link
+                          to="/detail/container"
+                          onClick={() => setOpen(false)}
+                        >
+                          Container Load & Shipping line
+                        </Link>
                       </p>
                     </div>
                   </div>
@@ -65,20 +87,24 @@ const Navbar = () => {
               </div>
             </li>
             <li>
-              <Link to="/">About</Link>
+              <Link to="/detail/about" onClick={() => setOpen(false)}>
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/detail/contact">Contact</Link>
+              <Link to="/detail/contact" onClick={() => setOpen(false)}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
         {open ? (
           <div className="iconContainer" onClick={() => setOpen(false)}>
-          <GiCancel className='toggleIcon'  />
+            <GiCancel className="toggleIcon" />
           </div>
         ) : (
           <div className="iconContainer" onClick={() => setOpen(true)}>
-          <MdTableRows className='toggleIcon'  />
+            <MdTableRows className="toggleIcon" />
           </div>
         )}
       </div>

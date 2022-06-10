@@ -4,6 +4,7 @@ import Navbar from "../components/navbar/Navbar";
 import Home from "./home/Home";
 import Detail from '../components/detail/Detail'
 import Contact from "./contact/Contact";
+import About from "./about/About";
 
 const index = () => {
   return (
@@ -13,6 +14,7 @@ const index = () => {
         <Route path="/" element={<Home />} />
         <Route path='/detail/:page' element={<Detail />} />
         <Route path='/detail/contact' element={<Contact />} />
+        <Route path='/detail/about' element={<About />} />
       </Routes>
       <Footer />
     </Router>

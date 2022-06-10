@@ -171,6 +171,16 @@ const Detail = () => {
                 </li>
               </ul>
             </div>
+            <div className="about__contact">
+              <h3 style={{ textAlign: "center" }}>Contact Us</h3>
+              <p>TEL:+256200906877</p>
+              <p>mob: +256706316189/+256785339997</p>
+              <p>Customer care: +256200906877</p>
+              <p>
+                Plot 56-60 Kampala road/Entrance D-2nd floor (Room 7),
+                Ambassador house,
+              </p>
+            </div>
           </div>
         </div>
       </div>

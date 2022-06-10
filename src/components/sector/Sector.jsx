@@ -1,4 +1,4 @@
-import img from "../../assets/images/1.jpg";
+import img from "../../assets/images/new.jpg";
 import "./sector.css";
 
 import { AiOutlineCar } from "react-icons/ai";

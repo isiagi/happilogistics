@@ -1,5 +1,5 @@
 .why__container {
-  min-height: 70vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   background-color: #fff;
@@ -14,6 +14,7 @@
 .why__flex {
   display: flex;
   gap: 10px;
+  margin-block: 3rem;
 }
 
 .why__grid {
@@ -25,7 +26,7 @@
 .why__content {
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .why__content > h2 {
