@@ -6,6 +6,7 @@ import Sector from "../../components/sector/Sector";
 import "./Home.css";
 import Why from "../../components/why/Why";
 import React from "react";
+import Banner from '../../components/banner/Banner'
 
 const Home = () => {
   React.useEffect(() => {
@@ -20,6 +21,7 @@ const Home = () => {
       <Sector />
       <Client />
       <Partner />
+      <Banner />
     </div>
   );
 };
