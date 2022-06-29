@@ -1,11 +1,11 @@
 import Header1 from "../../components/header1/Header1";
 import Services from "../../components/service/Services";
-import Partner from "../../components/patner/Partner";
 import Sector from "../../components/sector/Sector";
 import "./Home.css";
 import Why from "../../components/why/Why";
 import React from "react";
 import Banner from '../../components/banner/Banner'
+import Client from '../../components/client/Client'
 
 const Home = () => {
   React.useEffect(() => {
@@ -18,7 +18,7 @@ const Home = () => {
       <Why />
       <Services />
       <Sector />
-      <Partner />
+      <Client />
       <Banner />
     </div>
   );
