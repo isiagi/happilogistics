@@ -12,14 +12,6 @@ import { Link } from "react-router-dom";
 
 const data = [
   {
-    id: 2,
-    icon: <RiShipLine />,
-    head: "SEA FREIGT",
-    para: `We handle sea freight (general cargo, specialized cargo and
-      heavy equipment. Clients gets maximum value for their money.`,
-    route: "/detail/water",
-  },
-  {
     id: 3,
     icon: <IoAirplaneOutline />,
     head: "AIR FREIGT",
@@ -28,20 +20,12 @@ const data = [
     route: "/detail/air",
   },
   {
-    id: 4,
-    icon: <CgBox />,
-    head: "WARE HOUSING",
-    para: `We offer warehousing service & prepare documentation ,
-    verification and exiting goods to your premises`,
-    route: "/detail/ware",
-  },
-  {
-    id: 7,
-    icon: <MdOutlineVerifiedUser />,
-    head: "INSURANCE",
-    para: `We have clients get customs & freight insurance , financial
-    guarantee & insurance bonds`,
-    route: "/detail/insurance",
+    id: 2,
+    icon: <RiShipLine />,
+    head: "SEA FREIGT",
+    para: `We handle sea freight (general cargo, specialized cargo and
+      heavy equipment. Clients gets maximum value for their money.`,
+    route: "/detail/water",
   },
   {
     id: 8,
@@ -52,6 +36,14 @@ const data = [
     route: "/detail/land",
   },
   {
+    id: 4,
+    icon: <CgBox />,
+    head: "WARE HOUSING",
+    para: `We offer warehousing service & prepare documentation ,
+    verification and exiting goods to your premises`,
+    route: "/detail/ware",
+  },
+  {
     id: 5,
     icon: <MdOutlineDeliveryDining />,
     head: "DISTRIBUTION & DELIVERY",
@@ -59,6 +51,14 @@ const data = [
     integrate ship ,air, rail and road transport for you to get the
     best`,
     route: "/detail/ware",
+  },
+  {
+    id: 7,
+    icon: <MdOutlineVerifiedUser />,
+    head: "INSURANCE",
+    para: `We have clients get customs & freight insurance , financial
+    guarantee & insurance bonds`,
+    route: "/detail/insurance",
   },
   {
     id: 1,

@@ -1,12 +1,37 @@
 import "./contact.css";
 import Map from "./Map";
+import emailjs from "@emailjs/browser";
 import { GrMapLocation } from "react-icons/gr";
 import { AiOutlineMail } from "react-icons/ai";
 import { CgPhone } from "react-icons/cg";
-import React from "react";
+import React, { useRef } from "react";
 
 const Contact = () => {
   let loc = window.location.pathname;
+
+  const form = useRef();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_nx7edai",
+        "template_5sgzq3q",
+        form.current,
+        "pjiNHTJo84E9K5tuy"
+      )
+      .then(
+        (result) => {
+          console.log("sent", result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    // event.value = "";
+  };
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,18 +56,26 @@ const Contact = () => {
               <Map />
             </div>
             <div>
-              <form>
-                <input type="text" className="form__input" placeholder="Name" />
+              <form ref={form} onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  name="name"
+                  className="form__input"
+                  placeholder="Name"
+                />
                 <br />
                 <input
                   type="email"
+                  name="email"
                   className="form__input"
                   placeholder="Email"
                 />
                 <br />
-                <textarea placeholder="message" rows="6" />
+                <textarea name="message" placeholder="message" rows="6" />
                 <br />
-                <button className="form__button">Send</button>
+                <button className="form__button" type="submit">
+                  Send
+                </button>
               </form>
             </div>
           </div>
