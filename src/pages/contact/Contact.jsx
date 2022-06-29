@@ -24,13 +24,12 @@ const Contact = () => {
       .then(
         (result) => {
           console.log("sent", result.text);
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
         }
       );
-
-    // event.value = "";
   };
 
   React.useEffect(() => {
