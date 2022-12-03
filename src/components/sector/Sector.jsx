@@ -12,13 +12,16 @@ import { SiXdadevelopers } from "react-icons/si";
 const Sector = () => {
   return (
     <div className="sector__container">
+      <div></div>
       <div className="sector__wrapper sector__flex">
         <div className="sector__content1">
-          <h2>INDUSTRY SECTORS COVERAGE</h2>
-          <p style={{ color: "#abb8c3", width: '550px' }}>
-            A specialized service in handing and management of import cargo such
-            as;
-          </p>
+          <div style={{maxWidth: '300px'}}>
+            <h2>INDUSTRY SECTORS COVERAGE</h2>
+            <p style={{ color: "#abb8c3"}}>
+              A specialized service in handing and management of import cargo
+              such as;
+            </p>
+          </div>
           <p className="sector">
             <GiCargoCrate className="sector__icons" /> General cargo
           </p>

@@ -1,0 +1,16 @@
+.begin__container {
+    position: relative;
+}
+.begin__container > h1{
+    font-size: 5em;
+    -webkit-text-stroke: 1px rgb(216, 216, 216);
+    color: transparent;
+    letter-spacing: 0.2rem;
+}
+
+.begin__container p {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    color: #EB6B61;
+}

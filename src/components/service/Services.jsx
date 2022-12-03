@@ -10,6 +10,9 @@ import { MdOutlineDeliveryDining } from "react-icons/md";
 import { GiCargoCrate } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
+import imgw from "../../assets/images/car.jpg";
+import img1 from "../../assets/images/car.jpg";
+
 const data = [
   {
     id: 3,
@@ -88,40 +91,52 @@ const data = [
 
 const Services = () => {
   return (
-    <div
-      style={{
-        maxWidth: "1020px",
-        width: "100%",
-        margin: "5rem auto",
-      }}
-    >
-      <h2
+    <div style={{ background: "#1F425D", paddingBlock: "4rem"}}>
+      <div
         style={{
-          textAlign: "center",
-          color: "rgb(210, 53, 53)",
-          marginBottom: "2rem",
-          fontSize: "2rem",
+          maxWidth: "1020px",
+          width: "100%",
+          margin: "0 auto",
         }}
       >
-        Our Services
-      </h2>
-      <div className="services-grid">
-        {data.map(({ id, icon, head, para, route }) => (
-          <div className="hello" key={id}>
-            <div className="services-col-grid">
-              <div className="service__content">
-                <h3>{icon}</h3>
-                <h2>{head}</h2>
-                <div className="service__content1">
-                  <p>{para}</p>
+        <div>
+          <div>
+            <div />
+            <h3 style={{ color: "rgb(210, 53, 53)" }}>Our Services</h3>
+          </div>
+          <h2
+            style={{
+              color: "#fff",
+              marginBottom: "2rem",
+              fontSize: "3rem",
+            }}
+          >
+            What <span style={{ color: "#0693e3" }}>We Do</span>
+          </h2>
+        </div>
+        <div className="services-grid">
+          {data.map(({ id, icon, head, para, route }) => (
+            <div className="hello" key={id}>
+              <div className="services-col-grid">
+                <div className="service__content">
+                  {/* 077114475 */}
+                  <div className="service__image">
+                    <img src={imgw} alt="" />
+                  </div>
+                  <div className="service__textz">
+                    <h2>{head}</h2>
+                    <div className="service__content1">
+                      <p>{para}</p>
+                    </div>
+                    <p className="part">
+                      <Link to={route}>Read More</Link>
+                    </p>
+                  </div>
                 </div>
-                <p className="part">
-                  <Link to={route}>Read More</Link>
-                </p>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
