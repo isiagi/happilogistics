@@ -16,12 +16,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  padding-block: 90px;
 }
 
 .sector__img > img {
-  width: 400px;
+  width: 500px;
   max-width: 100%;
-  height: 500px;
+  height: 600px;
   max-height: auto;
   object-fit: cover;
 }
@@ -34,6 +35,7 @@
 
 .sector__content1 > h2 {
   color: rgb(210, 53, 53);
+  font-size: 2rem;
 }
 
 .sector__content1  .grt {
@@ -41,12 +43,21 @@
 }
 
 .sector {
-  font-size: 1.2rem;
-  font-weight: light;
-  color: #abb8c3;
+  font-size: 1.3rem;
+  /* font-weight: light; */
+  /* color: #abb8c3; */
+  color: "#1F425D";
+}
+
+.sector__iconz {
+  display: flex;
+  align-items: center;
+  color: "#1F425D";
+  gap: 1rem;
 }
 
 .sector__icons {
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: #0693e3;
 }
+

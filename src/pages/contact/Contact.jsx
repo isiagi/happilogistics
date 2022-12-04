@@ -5,6 +5,7 @@ import { GrMapLocation } from "react-icons/gr";
 import { AiOutlineMail } from "react-icons/ai";
 import { CgPhone } from "react-icons/cg";
 import React, { useRef } from "react";
+import Form from "./Form";
 
 const Contact = () => {
   let loc = window.location.pathname;
@@ -54,29 +55,7 @@ const Contact = () => {
             <div>
               <Map />
             </div>
-            <div>
-              <form ref={form} onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  name="name"
-                  className="form__input"
-                  placeholder="Name"
-                />
-                <br />
-                <input
-                  type="email"
-                  name="email"
-                  className="form__input"
-                  placeholder="Email"
-                />
-                <br />
-                <textarea name="message" placeholder="message" rows="6" />
-                <br />
-                <button className="form__button" type="submit">
-                  Send
-                </button>
-              </form>
-            </div>
+            <Form />
           </div>
           <div className="contact__info">
             <div>

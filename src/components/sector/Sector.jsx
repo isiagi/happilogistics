@@ -12,39 +12,61 @@ import { SiXdadevelopers } from "react-icons/si";
 const Sector = () => {
   return (
     <div className="sector__container">
+      <div></div>
       <div className="sector__wrapper sector__flex">
         <div className="sector__content1">
-          <h2>INDUSTRY SECTORS COVERAGE</h2>
-          <p style={{ color: "#abb8c3", width: '550px' }}>
-            A specialized service in handing and management of import cargo such
-            as;
-          </p>
-          <p className="sector">
-            <GiCargoCrate className="sector__icons" /> General cargo
-          </p>
-          <p className="sector">
-            <AiOutlineProject className="sector__icons" />
-            Project cargo
-          </p>
-          <p className="sector">
-            <AiOutlineCar className="sector__icons" /> Vehicles
-          </p>
-          <p className="sector">
-            <GiMetalPlate className="sector__icons" />
-            Plastics, steel & machinery
-          </p>
-          <p className="sector">
-            <GiMinerals className="sector__icons" />
-            Oil, extractives & minerals
-          </p>
-          <p className="sector">
-            <BsBoxSeam className="sector__icons" />
-            Specialized equipment
-          </p>
-          <p className="sector">
-            <SiXdadevelopers className="sector__icons" />
-            Consumables (electronics, clothing, etc.)
-          </p>
+          <div style={{ maxWidth: "300px" }}>
+          <div style={{ background: "#2A94E3", height: '5px', width: "15% "}}/>
+            <h2 style={{ color: "#1F425D" }}>INDUSTRY SECTORS COVERAGE</h2>
+            <p style={{ color: "#abb8c3",fontSize: "1.1em" }}>
+              A specialized service in handing and management of import cargo
+              such as;
+            </p>
+          </div>
+          <div className="sector__iconz">
+            <p>
+              <GiCargoCrate className="sector__icons" />
+            </p>
+            <p style={{ color: "#1F425D", fontSize: "1.3rem", }}>General cargo</p>
+          </div>
+          <div className="sector__iconz">
+            <p>
+              <AiOutlineProject className="sector__icons" />
+            </p>
+            <p style={{ color: "#1F425D", fontSize: "1.3rem", }}>Project cargo</p>
+          </div>
+          <div className="sector__iconz">
+            <p>
+              <AiOutlineCar className="sector__icons" />
+            </p>
+            <p style={{ color: "#1F425D", fontSize: "1.3rem", }}>Vehicles</p>
+          </div>
+          <div className="sector__iconz">
+            <p>
+              <GiMetalPlate className="sector__icons" />
+            </p>
+            <p style={{ color: "#1F425D", fontSize: "1.3rem", }}>Plastics, steel & machinery</p>
+          </div>
+          <div className="sector__iconz">
+            <p>
+              <GiMinerals className="sector__icons" />
+            </p>
+            <p style={{ color: "#1F425D", fontSize: "1.3rem", }}>Oil, extractives & minerals</p>
+          </div>
+
+          <div className="sector__iconz">
+            <p>
+              <BsBoxSeam className="sector__icons" />
+            </p>
+            <p style={{ color: "#1F425D", fontSize: "1.3rem", }}>Specialized equipment</p>
+          </div>
+
+          <div className="sector__iconz">
+            <p>
+              <SiXdadevelopers className="sector__icons" />
+            </p>
+            <p style={{ color: "#1F425D", fontSize: "1.3rem", }}>Consumables (electronics, clothing, etc.)</p>
+          </div>
         </div>
         <div className="sector__img">
           <img src={img} alt="sector" />
