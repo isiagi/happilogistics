@@ -98,6 +98,11 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        <div className="quote">
+          <Link to="/detail/contact" onClick={() => setOpen(false)}>
+            Get A Quote
+          </Link>
+        </div>
         {open ? (
           <div className="iconContainer" onClick={() => setOpen(false)}>
             <GiCancel className="toggleIcon" />

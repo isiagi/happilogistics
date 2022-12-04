@@ -10,6 +10,8 @@ import img4 from "../../assets/images/ware.jpeg";
 import img5 from "../../assets/images/in.jpg";
 import img6 from "../../assets/images/fg.jpg";
 
+import { HiArrowCircleRight } from "react-icons/hi";
+
 const Detail = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -38,9 +40,42 @@ const Detail = () => {
     }
   };
 
+  let detailImage = img1;
+
+  if (para.page === "air") {
+    detailImage = img1;
+  } else if (para.page === "water") {
+    detailImage = img3;
+  } else if (para.page === "land") {
+    detailImage = img2;
+  } else if (para.page === "ware") {
+    detailImage = img4;
+  } else if (para.page === "insurance") {
+    detailImage = img5;
+  } else if (para.page === "container") {
+    detailImage = img6;
+  }
+
   return (
     <>
-      <div className="detail__head">
+      <div
+        style={{
+          minHeight: "50vh",
+          background: `linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.5) 100%,
+      rgba(28, 28, 194, 0.5) 100%
+    ), url(${detailImage})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "white",
+        }}
+      >
         <div className="detail__flap">
           <h2>{heading()}</h2>
           <p>you're on {loc}</p>
@@ -144,29 +179,36 @@ const Detail = () => {
 
           <div className="detail__container2">
             <div className="detail__content">
-              <h3 style={{ fontWeight: "500", color: "#0693e3" }}>Services</h3>
-              <ul>
-                <li>
+              <h3 style={{ fontWeight: "500", color: "#0693e3",fontSize: "1.6rem",margin: "1rem 0" }}>Services</h3>
+              <ul style={{lineHeight: "1rem"}}>
+                <li style={{fontSize: "1.2rem", lineHeight: "2.5rem" }}>
+                  <HiArrowCircleRight className="iconzy" />{" "}
                   <Link to="/detail/land">Road transport</Link>
                 </li>
-                <li>
+                <li style={{fontSize: "1.2rem", lineHeight: "2.5rem"  }}>
+                  <HiArrowCircleRight className="iconzy" />{" "}
                   <Link to="/detail/air">Air frieght</Link>
                 </li>
-                <li>
+                <li style={{fontSize: "1.2rem", lineHeight: "2.5rem"  }}>
+                  <HiArrowCircleRight className="iconzy" />{" "}
                   <Link to="/detail/water">Water frieght</Link>
                 </li>
-                <li>
+                <li style={{fontSize: "1.2rem", lineHeight: "2.5rem"  }}>
+                  <HiArrowCircleRight className="iconzy" />{" "}
                   <Link to="/detail/ware">Distribution & Delivery</Link>
                 </li>
-                <li>
+                <li style={{fontSize: "1.2rem", lineHeight: "2.5rem"  }}>
+                  <HiArrowCircleRight className="iconzy" />{" "}
                   <Link to="/detail/ware">Ware housing</Link>
                 </li>
-                <li>
+                <li style={{fontSize: "1.2rem", lineHeight: "2.5rem"  }}>
+                  <HiArrowCircleRight className="iconzy" />{" "}
                   <Link to="/detail/insurance">Cargo insurance</Link>
                 </li>
-                <li>
+                <li style={{fontSize: "1.2rem", lineHeight: "2.5rem"  }}>
                   <Link to="/detail/container">
-                    Container Load & Shipping line
+                    <HiArrowCircleRight className="iconzy" /> Container Load &
+                    Shipping line
                   </Link>
                 </li>
               </ul>
