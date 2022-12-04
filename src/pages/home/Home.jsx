@@ -7,6 +7,7 @@ import React from "react";
 import Banner from '../../components/banner/Banner'
 import Client from '../../components/client/Client'
 import AboutSection from "../../components/about_section/AboutSection";
+import Last from "../../components/last/Last";
 
 const Home = () => {
   React.useEffect(() => {
@@ -22,6 +23,7 @@ const Home = () => {
       <Sector />
       <Client />
       <Banner />
+      <Last />
     </div>
   );
 };
