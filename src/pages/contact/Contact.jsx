@@ -1,37 +1,37 @@
 import "./contact.css";
 import Map from "./Map";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import { GrMapLocation } from "react-icons/gr";
 import { AiOutlineMail } from "react-icons/ai";
 import { CgPhone } from "react-icons/cg";
-import React, { useRef } from "react";
+import React from "react";
 import Form from "./Form";
 
 const Contact = () => {
   let loc = window.location.pathname;
 
-  const form = useRef();
+  // const form = useRef();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_nx7edai",
-        "template_5sgzq3q",
-        form.current,
-        "pjiNHTJo84E9K5tuy"
-      )
-      .then(
-        (result) => {
-          console.log("sent", result.text);
-          form.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  //   emailjs
+  //     .sendForm(
+  //       "service_nx7edai",
+  //       "template_5sgzq3q",
+  //       form.current,
+  //       "pjiNHTJo84E9K5tuy"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log("sent", result.text);
+  //         form.current.reset();
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
 
   React.useEffect(() => {
     window.scrollTo(0, 0);

@@ -44,8 +44,11 @@ textarea {
 }
 
 .contact__head {
-  min-height: 40vh;
-  background-color: rgb(210, 53, 53);
+  min-height: 50vh;
+  background: url("../../assets/images/hey.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   display: flex;
   color: #fff;

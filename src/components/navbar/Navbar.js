@@ -20,12 +20,12 @@ const Navbar = () => {
 
   // }, [location]);
 
-  let loc = window.location.pathname.includes("/detail/");
+  // let loc = window.location.pathname.includes("/detail/");
 
   return (
     <div className="navbar">
       <div
-        className={offSet > 40 || loc ? "navbarContainer1" : "navbarContainer"}
+        className={offSet > 40 ? "navbarContainer1" : "navbarContainer"}
       >
         <h1 style={{ marginLeft: "2rem", fontSize: "3rem" }}>
           <Link to="/" onClick={() => setOpen(false)}>
