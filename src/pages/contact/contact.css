@@ -45,7 +45,11 @@ textarea {
 
 .contact__head {
   min-height: 50vh;
-  background: url("../../assets/images/hey.jpg");
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.5) 100%,
+    rgba(28, 28, 194, 0.5) 100%
+  ),url("../../assets/images/hey.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
