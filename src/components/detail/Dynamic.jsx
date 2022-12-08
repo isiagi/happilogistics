@@ -13,7 +13,7 @@ const Dynamic = ({ title, head, word, word1, services, word2 }) => {
   return (
     <div style={{ maxWidth: "700px", lineHeight: "2.5rem", color: "#433b6d " }}>
       <div className="detail__img">
-        <img src={title} alt="truck" />
+        <img src={title} alt={head} />
       </div>
       <h1 style={{ color: "#1F425D", paddingBlock: "2rem" }}>{head}</h1>
       {word && <p style={{ color: "#555758" }}>{word}</p>}

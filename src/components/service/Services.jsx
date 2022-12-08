@@ -136,7 +136,7 @@ const Services = () => {
                 <div className="service__content">
                   {/* 077114475 */}
                   <div className="service__image">
-                    <img src={img} alt="" />
+                    <img src={img} alt={head} />
                   </div>
                   <div className="service__textz">
                     <h2 style={{ marginBlock: "1rem" }}>{head}</h2>
