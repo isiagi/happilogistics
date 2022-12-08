@@ -3,6 +3,7 @@ import { IoIosBasketball } from "react-icons/io";
 import { GrUserExpert } from "react-icons/gr";
 import { BiTime } from "react-icons/bi";
 import { MdOutlineGppGood } from "react-icons/md";
+import Begin from "../begin/Begin";
 
 const data = [
   {
@@ -40,13 +41,13 @@ const Why = () => {
     <div className="why__container">
       <div className="why__wrapper">
         <div className="why__content">
-          <h2>Why Choose Us</h2>
-          <p>This is why you shold choose us</p>
+        <Begin head="Features" para="Why Choose Us"/>
+          <h2>4 Reasons Why</h2>
         </div>
         <div className="why__grid">
           {data.map(({ id, icon, para,head }) => (
             <div className="why__flex" key={id}>
-              <p className="icon">{icon}</p>
+              <p className="iconny">{icon}</p>
               <div>
                 <h3>{head}</h3>
                 <p>{para}</p>

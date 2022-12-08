@@ -6,6 +6,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import { CgPhone } from "react-icons/cg";
 import React from "react";
 import Form from "./Form";
+import Begin from "../../components/begin/Begin";
+import Banner from "../../components/banner/Banner";
 
 const Contact = () => {
   let loc = window.location.pathname;
@@ -47,35 +49,29 @@ const Contact = () => {
       </div>
       <div className="contact__container">
         <div className="contact__wrapper">
-          <div className="contact__lead">
-            <h2>Contact Us</h2>
-            <p>We look forward to hearing from you.</p>
-          </div>
+         
+            <div className="contact__lead">
+              <div>
+                <Begin head="Contact" para="Fil the Form" />
+                <h2
+                  style={{
+                    marginTop: "-40px",
+                    marginBottom: "2rem",
+                    fontSize: "3rem",
+                  }}
+                >
+                  Get In Touch
+                </h2>
+              </div>
+            </div>
+          
           <div className="contact__form">
             <div>
               <Map />
             </div>
             <Form />
           </div>
-          <div className="contact__info">
-            <div>
-              <CgPhone className="icon" />
-              <p>+256200906877</p>
-              <p>+256706316189</p>
-            </div>
-            <div>
-              <GrMapLocation className="icon" />
-              <p>
-                Plot 56-60 Kampala road/Entrance D-2nd floor (Room 7),
-                Ambassador house
-              </p>
-            </div>
-            <div>
-              <AiOutlineMail className="icon" />
-              <p>info@maritimeshippingcs.com</p>
-              <p>www.maritimeshiooingcs.com</p>
-            </div>
-          </div>
+          <Banner />
         </div>
       </div>
     </>

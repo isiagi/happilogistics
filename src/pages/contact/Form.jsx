@@ -1,9 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import "./contact.css";
 
+// info@maritimeshippingcompany.com
+
 function Form() {
+  const[sent, setSent] = useState("")
   const form = useRef();
 
   const handleSubmit = (event) => {
@@ -18,7 +21,12 @@ function Form() {
       )
       .then(
         (result) => {
-          console.log("sent", result.text);
+          console.log("sent", result);
+          if(result.status === 200) {
+            setSent("Your Quote has been sent successfully")
+          } else {
+            setSent("Error Occured: " + result.text)
+          }
           form.current.reset();
         },
         (error) => {
@@ -28,6 +36,10 @@ function Form() {
   };
   return (
     <div>
+    <div className={sent ? 'form__message' : 'show__none'}>
+      <h2>Your Quote has been sent successfully</h2>
+      <h3 className="letter__x" onClick={() => setSent("")}>X</h3>
+    </div>
       <form ref={form} onSubmit={handleSubmit}>
         <input
           type="text"

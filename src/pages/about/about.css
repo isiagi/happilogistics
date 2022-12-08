@@ -1,6 +1,13 @@
 .about__head {
-  min-height: 40vh;
-  background-color: rgb(210, 53, 53);
+  min-height: 50vh;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.5) 100%,
+    rgba(28, 28, 194, 0.5) 100%
+  ),url("../../assets/images/2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   display: flex;
   color: #fff;
@@ -23,6 +30,7 @@
   display: flex;
   justify-content: center;
   color: rgb(49, 49, 160);
+  background-color: #fff;
 }
 
 .about__contain {

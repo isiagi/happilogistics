@@ -1,5 +1,6 @@
 .begin__container {
     position: relative;
+    margin-bottom: 1.4rem;
 }
 .begin__container > h1{
     font-size: 5em;
@@ -10,7 +11,10 @@
 
 .begin__container p {
     position: absolute;
-    top: 40%;
+    top: 70%;
     left: 20px;
     color: #EB6B61;
+    font-weight: 500;
+    font-size: 15px;
+    margin-block: .5rem;
 }

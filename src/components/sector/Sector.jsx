@@ -8,6 +8,7 @@ import { AiOutlineProject } from "react-icons/ai";
 import { BsBoxSeam } from "react-icons/bs";
 import { GiMinerals } from "react-icons/gi";
 import { SiXdadevelopers } from "react-icons/si";
+import Begin from "../begin/Begin";
 
 const Sector = () => {
   return (
@@ -15,7 +16,8 @@ const Sector = () => {
       <div></div>
       <div className="sector__wrapper sector__flex">
         <div className="sector__content1">
-          <div style={{ maxWidth: "300px" }}>
+        <Begin head="Sectors" para="Our Take"/>
+          <div style={{ maxWidth: "300px", marginTop: "20px" }}>
           <div style={{ background: "#2A94E3", height: '5px', width: "15% "}}/>
             <h2 style={{ color: "#1F425D" }}>INDUSTRY SECTORS COVERAGE</h2>
             <p style={{ color: "#abb8c3",fontSize: "1.1em" }}>

@@ -25,31 +25,36 @@
   width: 100%;
 }
 
-
 .service__content > h3 {
-    margin-block: 2rem;
-    font-size: 3rem;
-    color: #fff;
+  margin-block: 2rem;
+  font-size: 3rem;
+  color: #fff;
 }
 
 .service__content > h2 {
-    margin-block: 1rem;
-    color: #fff;
+  margin-block: 1rem;
+  color: #fff;
 }
 
 .service__content1 {
-    height: 50px;
+  height: 50px;
+  margin-bottom: 2rem;
 }
 
 .service__content1 > p {
-    color: #fff;
+  line-height: 20px;
+  color: red;
+}
+
+.service__content1 > p {
+  color: #fff;
 }
 
 .part {
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
-    font-weight: bold;
-    color: rgb(210, 53, 53);
+  font-weight: bold;
+  color: rgb(210, 53, 53);
 }
 
 /* .hello:hover * {

@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: #F5F5F5;
   align-items: center;
 }
 
@@ -12,19 +12,25 @@
 }
 
 .why__flex {
-  display: flex;
   gap: 10px;
   margin-block: 3rem;
+  background-color: #FFFFFF;
+  padding:0 2rem;
+}
+
+.iconny {
+  font-size: 4.5em;
+  color: #2A94E3;
 }
 
 .why__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .why__content {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -43,11 +49,14 @@
 }
 
 .why__flex > div > h3 {
-  color: rgb(210, 53, 53);
+  color: #1F425D;
+  font-size: 1.5em;
 }
 
 .why__flex > div > p {
   color: #abb8c3;
+  font-size: 1.1em;
+  margin-block: 1.5rem;
 }
 
 .look {
